@@ -58,7 +58,7 @@ class ObjectDetector:
 
 class VideoWindow(QWidget):
     def __init__(self, camera_id=0):
-        super().__init__()
+        super().__init__(None)
         # Set logger
         basicConfig(level=INFO)
         self.logger = getLogger(__name__)
